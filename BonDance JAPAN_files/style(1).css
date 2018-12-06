@@ -1,0 +1,570 @@
+@charset "UTF-8";
+/*----------このエリアは削除すると正しく動作しない可能性があります----------
+
+Theme Name:   LION MEDIA Child
+Theme URI:    http://fit-jp.com/theme/
+Description:  FIT(フィット) が制作するメディア用WordPressTHEME「LION MEDIA」の子テーマ
+Author:       Kota Naito　@FIT(フィット)
+Author URI:   http://fit-jp.com/about/
+Template:     lionmedia
+Version:      1.2
+License:      GNU GENERAL PUBLIC LICENSE
+License URI:  http://www.gnu.org/licenses/gpl.html
+
+----------このエリアは削除すると正しく動作しない可能性があります----------*/
+
+
+/*/////////////////////////////////////////////////
+//下記ユーザーカスタマイズエリア
+/////////////////////////////////////////////////*/
+
+body {
+  position: relative;
+}
+
+a {
+  color: #089ab9;
+}
+
+h3 {
+  margin: 25px 0;
+}
+
+.l-header,
+.searchNavi__title,
+.key__cat,
+.eyecatch__cat,
+.rankingBox__title,
+.categoryDescription,
+.pagetop,
+.contactTable__header .required,
+.heading.heading-primary .heading__bg,
+.btn__link:hover,
+.widget .tag-cloud-link:hover,
+.comment-respond .submit:hover,
+.comments__list .comment-reply-link:hover,
+.widget .calendar_wrap tbody a:hover,
+.comments__list .comment-meta,
+.ctaPost__btn {
+  background: : #7acee0 !important;
+}
+
+.heading.heading-first,
+.heading.heading-widget::before,
+.heading.heading-footer::before,
+.btn__link,
+.widget .tag-cloud-link,
+.comment-respond .submit,
+.comments__list .comment-reply-link,
+.content a:hover,
+.t-light .l-footer,
+.ctaPost__btn{
+  border-color: #7acee0 !important;
+}
+
+/*/////////////////////////////////////////////////
+ヘッダー
+/////////////////////////////////////////////////*/
+
+.l-header {
+  height: 50px;
+  background: #fefefe !important;
+  z-index: 1001;
+}
+
+.home .l-header {
+  position: absolute;
+  background: rgba(255,255,255,0.9) !important;
+}
+
+.archive {
+  margin-left: 0;
+}
+
+.breadcrumb {
+  width: 100%;
+}
+
+.breadcrumb__item {
+  display: inline-block;
+}
+
+.siteTitle {
+  width: 100% !important;
+  height: 50px;
+  margin-top: 0;
+}
+
+.siteTitle__main {
+  font-size: 1.5rem;
+  line-height: 50px;
+}
+
+.siteTitle__link {
+  height: 50px;
+  float: none;
+  text-align: center;
+}
+
+.menuNavi {
+  float: none;
+  position: absolute;
+  right: 0;
+  margin-right: 0;
+}
+
+.l-extra {
+  display: none;
+  position: absolute;
+}
+
+/*/////////////////////////////////////////////////
+フッター
+/////////////////////////////////////////////////*/
+
+.l-footer {
+  background: #FFF;
+  border-top: 1px solid #089ab9;
+  text-align: center;
+}
+
+.copySns__copy {
+  color: #191919;
+  width: 100%;
+  font-size: 1.2rem;
+}
+
+.copySns__copy a {
+  color: #191919;
+}
+
+.pagetop__link {
+  color: #FFF;
+}
+
+/*/////////////////////////////////////////////////
+検索
+/////////////////////////////////////////////////*/
+
+.searchBox {
+  margin: 0 10px;
+  border: 1px solid #7acee0;
+}
+
+.toggleSearchBox {
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.toggleSearchBox .toggleSearchBoxButton {
+  position: relative;
+  margin-bottom: 0;
+  padding: 14px 10px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.toggleSearchBox .searchForm {
+  width: 100%;
+  padding: 10px 10px 0;
+}
+
+.toggleSearchBox .toggleSearchBoxButton::after {
+  content: '▼';
+  font-size: 10px;
+  position: absolute;
+  top: 17px;
+  right: 9px;
+  z-index: -1;
+}
+.toggleSearchBox .toggleSearchBoxButton.active::after {
+  content: '▲';
+}
+
+.action_box {
+  margin: 30px auto;
+  text-align: center;
+}
+
+.action_box .submit {
+  width: 120px;
+  height: 40px;
+  font-size: 16px;
+  position: relative;
+  display: inline-block;
+  padding: 0.25em 0.5em;
+  text-decoration: none;
+  color: #FFF;
+  background: #7acee0;
+  border-bottom: solid 2px #5cb8cb;
+  border-radius: 4px;
+  box-shadow: inset 0 2px 0 rgba(255,255,255,0.2), 0 2px 2px rgba(0, 0, 0, 0.19);
+  font-weight: bold;
+  line-height: 30px;
+}
+
+.action_box .submit:active {
+  border-bottom: solid 2px #7acee0;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);
+}
+
+ul.recent_month_search {
+  text-align: center;
+  list-style-type: none;
+}
+ul.recent_month_search li {
+  display: inline-block;
+  border-top: none;
+  padding: 0 0 10px 20px;
+}
+
+.searchForm .label {
+  width: 90%;
+  margin: 20px auto 5px;
+  font-weight: bold;
+}
+
+.searchForm .input {
+  width: 90%;
+  margin: 10px auto;
+}
+
+.searchForm .input input[type="text"],
+.searchForm .input input[type="tel"],
+.searchForm .input input[type="email"],
+.searchForm .input input[type="password"],
+.searchForm .input input[type="search"],
+.searchForm .input input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #bbb;
+}
+
+.complexSearch {
+  background-color: #f2f2f2;
+  padding: 1px 0;
+  border-bottom: 2px solid #ddd;
+  border-radius: 8px;
+}
+
+.complexSearch .action_box {
+  margin: 20px auto;
+  width: 90%;
+}
+
+.complexSearch .action_box .submit {
+  width: 100%;
+}
+
+
+
+
+/*/////////////////////////////////////////////////
+スライダー
+/////////////////////////////////////////////////*/
+
+.slick-prev {
+  left: 0;
+  z-index: 1;
+}
+
+.slick-next {
+  right: 0;
+}
+
+.slick_slider{
+  display: none;
+}
+.slick_slider.slick-initialized{
+  display: block;
+}
+
+.slick_slider {
+  width: 100%;
+}
+
+.slick-slide img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.slick_slider div {
+  position:relative;
+}
+
+.slick_slider div p {
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  background: #000000bb;
+  color: #FFF;
+  bottom: 0;
+  text-shadow:  2px  2px 10px #777 ,
+             -2px  2px 10px #777 ,
+              2px -2px 10px #777 ,
+             -2px -2px 10px #777;
+}
+
+.articleSlider__wrap {
+  margin: 40px 0;
+  overflow-x: hidden;
+}
+
+.articleSlider {
+  margin-left: -55px;
+}
+
+.articleSlider .slick-prev,
+.articleSlider .slick-next {
+  top: 19%;
+  transform: none;
+}
+
+.articleSlider .slick-prev {
+  left: 70px;
+}
+
+@media screen and (min-width: 768px) {
+  .articleSlider {
+    margin-left: -60px;
+  }
+}
+
+/*/////////////////////////////////////////////////
+セレクトボックス
+/////////////////////////////////////////////////*/
+
+.selectbox {
+	overflow: hidden;
+	width: 90%;
+	margin: auto;
+	text-align: center;
+	position: relative;
+	border: 1px solid #bbbbbb;
+	border-radius: 2px;
+	background: #ffffff;
+}
+.selectbox select {
+	width: 100%;
+  height: 34px;
+	cursor: pointer;
+	text-indent: 0.01px;
+	text-overflow: ellipsis;
+	border: none;
+	outline: none;
+	background: transparent;
+	background-image: none;
+	box-shadow: none;
+	-webkit-appearance: none;
+	appearance: none;
+	padding: 8px 38px 8px 8px;
+	color: #666666;
+}
+.selectbox select::-ms-expand {
+  display: none;
+}
+.selectbox::before {
+	position: absolute;
+	top: 1em;
+	right: 0.8em;
+	width: 0;
+	height: 0;
+	padding: 0;
+	content: '';
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-top: 6px solid #666666;
+	pointer-events: none;
+}
+
+/*/////////////////////////////////////////////////
+カレンダー
+/////////////////////////////////////////////////*/
+
+.flatpickr-calendar {
+  margin: auto;
+}
+
+input.flatpickr {
+  display: none;
+}
+
+.flatpickr-months .flatpickr-month,
+.flatpickr-weekdays,
+span.flatpickr-weekday {
+  background: #7acee0 !important;
+}
+
+.flatpickr-day:not(.disabled) {
+  background: #ffb866;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  color: #fff;
+  border-color: #FFF;
+}
+
+.flatpickr-day.selected {
+  background: #089ab9 !important;
+  color: #fff;
+  border-color: #FFF !important;
+}
+
+/*/////////////////////////////////////////////////
+ウィジェット
+/////////////////////////////////////////////////*/
+
+.information_widget {
+  width: 100%;
+  padding: 20px 10px;
+  background: #7acee0;
+  text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+  .information_widget {
+    text-align: left;
+  }
+}
+
+.prefecture_list h3 {
+  margin-bottom: 10px;
+}
+
+.prefecture_list ul li {
+  display: inline-block;
+  margin-bottom: 0;
+  padding: 5px 0 0 20px;
+  border-top: none;
+}
+
+/*/////////////////////////////////////////////////
+イベント一覧
+/////////////////////////////////////////////////*/
+
+.archiveHeaderTitle {
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  font-size: 24px;
+  border-bottom: solid 5px #7acee0;
+}
+
+.archiveItem__date span {
+  font-size: 22px;
+}
+
+.archiveItem__tagList {
+  margin-bottom: 5px;
+}
+
+.archiveItem__tagList::after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+.archiveItem__tag {
+  display: block;
+  float: left;
+  margin: 0 10px 10px 0;
+  padding: 6px 5px 4px;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+.archiveItem__tag:link,
+.archiveItem__tag:active,
+.archiveItem__tag:focus,
+.archiveItem__tag:visited {
+  background-color: #7acee0;
+  color: #fff;
+  box-shadow: 0 1px 0 0 rgb(92, 184, 203);
+}
+
+.archiveItem__tag:hover {
+  color: #fff !important;
+  opacity: 0.75;
+}
+
+.archiveItem__tag::before {
+  content: "#";
+  margin-right: 0.25em;
+}
+
+@media only screen and (max-width: 767px){
+  .archiveItemEvent {
+      width: calc(100% - 10px);
+  }
+
+  .archiveItem__text {
+    display: block;
+  }
+}
+
+/*/////////////////////////////////////////////////
+イベント詳細
+/////////////////////////////////////////////////*/
+
+.heading.heading-singleTitle {
+  margin-top: 30px;
+}
+
+.eventSammary p {
+  margin-bottom: 10px;
+}
+
+.eventSammary-title {
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  border-bottom: solid 5px #7acee0;
+}
+
+.eventSammary-title-jp {
+  font-size: 24px;
+}
+
+.eventDetailsTable {
+  width: 98%;
+  margin: auto;
+}
+
+.eventDetailsTable th,
+.eventDetailsTable td {
+  border: 1px dotted #ccc;
+  padding: 10px;
+}
+
+.eventDetailsTable th {
+  width: 24%;
+}
+
+
+/*/////////////////////////////////////////////////
+お問い合わせ
+/////////////////////////////////////////////////*/
+
+.pageHeaderTitle {
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    font-size: 24px;
+    border-bottom: solid 5px #7acee0;
+}
+
+.inquiryForm input[type="text"],
+.inquiryForm input[type="email"],
+.inquiryForm textarea {
+  padding: 10px;
+  width: 100%;
+  font-size: 14px;
+  line-height: 1.5em;
+  border: 1px solid #DDD;
+}
+
+h4 span.required::after {
+  content: '*';
+  margin-left: 3px;
+  color: #089ab9;
+}
