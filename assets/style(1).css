@@ -165,7 +165,6 @@ h3 {
 .siteTitle__link {
   height: 50px;
   float: none;
-  text-align: center;
 }
 
 .menuNavi {
@@ -529,11 +528,7 @@ span.flatpickr-weekday {
 紹介文
 /////////////////////////////////////////////////*/
 .pageDescription {
-  margin: 2em 0;
-  padding: 1.5em 2em;
-  border-bottom: 2px solid #ddd;
-  border-radius: 8px;
-  background-color: #F2F2F2;
+  margin-bottom: 40px;
   text-align: justify;
   line-height: 1.75;
 }
@@ -714,6 +709,10 @@ span.flatpickr-weekday {
   vertical-align: top;
 }
 
+.eventDetailsMap {
+  width: 98%;
+  margin: 2em auto;
+}
 
 /*/////////////////////////////////////////////////
 お問い合わせ
