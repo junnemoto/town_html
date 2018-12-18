@@ -474,6 +474,63 @@ span.flatpickr-weekday {
 }
 
 /*/////////////////////////////////////////////////
+都道府県リスト
+/////////////////////////////////////////////////*/
+.prefs {
+  display: flex;
+  margin-bottom: 1em;
+  border-bottom: dotted 1px #D8D8D8;
+}
+
+.prefs-title {
+  flex-shrink: 0;
+  width: 150px;
+  margin: 0 1em 0 0;
+  white-space: nowrap;
+}
+
+.prefs-title .fa {
+  padding: 0 0.5em;
+  color: #7acee0;
+}
+
+.prefs-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.widget ul li.prefs-item {
+  margin: 0;
+  padding: 0 1em 1em 0;
+  border: 0;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.widget ul li.prefs-item::before {
+  content: none;
+}
+
+@media screen and (max-device-width: 767px) {
+  .prefs-wrap {
+    display: none;
+  }
+}
+
+/*/////////////////////////////////////////////////
+紹介文
+/////////////////////////////////////////////////*/
+.pageDescription {
+  margin: 2em 0;
+  padding: 1.5em 2em;
+  border-bottom: 2px solid #ddd;
+  border-radius: 8px;
+  background-color: #F2F2F2;
+  text-align: justify;
+  line-height: 1.75;
+}
+
+/*/////////////////////////////////////////////////
 ウィジェット
 /////////////////////////////////////////////////*/
 
