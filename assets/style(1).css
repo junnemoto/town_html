@@ -711,6 +711,7 @@ span.flatpickr-weekday {
 
 .eventDetailsTable th {
   width: 24%;
+  vertical-align: top;
 }
 
 
