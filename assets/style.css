@@ -727,8 +727,8 @@ a{
 /*アーカイブディスクリプションボックス(アーカイブで使用)*/
 .archiveDescription{
 	padding: 20px 0;
-    margin: -40px 0 40px 0;
-    line-height: 2;
+	margin: -40px 0 2em 0;
+	line-height: 2;
 	border-bottom: dotted 1px #E5E5E5;
 }
 /*アーカイブリスト(アーカイブで使用)*/
@@ -902,6 +902,7 @@ a{
 	width:100%;
 	text-align:center;
 	font-size:1.3rem;
+	margin-bottom: 40px;
 	padding-top: 40px;
     border-top: dotted 1px #D8D8D8;
 }

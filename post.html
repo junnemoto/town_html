@@ -122,7 +122,7 @@
               <a class="archiveItem__tag" href="#">東京スカイツリー周辺スポット</a>
               <a class="archiveItem__tag" href="#">浅草の手相占い</a>
             </div>
-        <h1 class="eventSammary-title"><span class="eventSammary-title-jp">八丁堀占いの館</span> Hatchoboriuranainoyakata</h1>
+        <h1 class="eventSammary-title"><span class="eventSammary-title-jp-ruby">はっちょうぼりうらないのやかた</span><span class="eventSammary-title-jp">八丁堀占いの館</span> Hatchoboriuranainoyakata</h1>
 
         <p><span class="icon-location"></span>東京都 / 西永福商店街 境内,表参道（東京都杉並区永福2-53）</p>
 
@@ -134,10 +134,62 @@
 
       <div class="widget">
         <!-- アイキャッチ -->
-                  <div class="eyecatch">
-      		  <img src="https://stg-bondance.machicon.jp/wp/wp-content/uploads/2018/11/iStock-673628940-724x410.jpg" alt="テスト的な盆踊り" width="724" height="410">
-      		            </div>
-  	            <!-- /アイキャッチ -->
+        <div id="eyecatch_slider">
+          <div class="eyecatch">
+            <img src="https://stg-bondance.machicon.jp/wp/wp-content/uploads/2018/11/iStock-673628940-724x410.jpg" alt="テスト的な盆踊り" width="724" height="410">
+          </div>
+          <div class="eyecatch">
+            <img src="https://stg-bondance.machicon.jp/wp/wp-content/uploads/2018/11/20181022-kyouore02-03.jpg" alt="テスト的な盆踊り" width="724" height="410">
+          </div>
+          <div class="eyecatch">
+            <img src="https://placeimg.com/724/410/animals" alt="テスト的な盆踊り" width="724" height="410">
+          </div>
+          <div class="eyecatch">
+            <img src="./assets/noimage01.png" alt="テスト的な盆踊り" width="724" height="410">
+          </div>
+          <div class="eyecatch">
+            <img src="https://placeimg.com/724/410/nature" alt="テスト的な盆踊り" width="724" height="410">
+          </div>
+          <div class="eyecatch">
+            <img src="https://placeimg.com/724/410/people" alt="テスト的な盆踊り" width="724" height="410">
+          </div>
+          <div class="eyecatch">
+            <img src="https://placeimg.com/724/410/tech" alt="テスト的な盆踊り" width="724" height="410">
+          </div>
+          <div class="eyecatch">
+            <img src="./assets/noimage01.png" alt="テスト的な盆踊り" width="724" height="410">
+          </div>
+          <div class="eyecatch">
+            <img src="https://placeimg.com/724/410/arch" alt="テスト的な盆踊り" width="724" height="410">
+          </div>
+          <div class="eyecatch">
+            <img src="./assets/noimage01.png" alt="テスト的な盆踊り" width="724" height="410">
+          </div>
+        </div>
+        <script type="text/javascript">
+          $(function() {
+            var $carousel = $('#eyecatch_slider'),
+            $carouselThumb = $carousel.clone().attr('id', 'slick-thumb').insertAfter($carousel);
+            $carousel.slick({
+              autoplay: true,
+              autoplaySpeed: 3000,
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              asNavFor: $carouselThumb
+            });
+            $carouselThumb.slick({
+              autoplay: true,
+              autoplaySpeed: 3000,
+              slidesToShow: 5,
+              slidesToScroll: 1,
+              centerMode: true,
+              focusOnSelect: true,
+              asNavFor: $carousel,
+              arrows: false
+            });
+          });
+        </script>
+        <!-- /アイキャッチ -->
 
         <p></p>
       </div>

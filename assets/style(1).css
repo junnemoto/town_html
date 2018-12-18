@@ -345,6 +345,14 @@ ul.recent_month_search li {
   width: 100%;
 }
 
+.slick-slide {
+  outline: none;
+}
+
+.slick-slide.eyecatch {
+  margin-bottom: 0;
+}
+
 .slick-slide img {
   display: block;
   width: 100%;
@@ -531,6 +539,40 @@ span.flatpickr-weekday {
 }
 
 /*/////////////////////////////////////////////////
+主要都市一覧
+/////////////////////////////////////////////////*/
+.areaList {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2em 0;
+}
+
+.areaList-item {
+  display: inline-flex;
+  padding: 0 1em 1em 0;
+  list-style: none;
+}
+
+.areaList-item > a {
+  padding: 0.25em 0.5em;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.areaList-item > a:link,
+.areaList-item > a:visited,
+.areaList-item > a:active,
+.areaList-item > a:focus {
+  background-color: #f2f2f2;
+  color: #191919;
+}
+
+.areaList-item > a:hover {
+  background-color: #b4e3ed;
+  color: #191919;
+}
+
+/*/////////////////////////////////////////////////
 ウィジェット
 /////////////////////////////////////////////////*/
 
@@ -567,6 +609,10 @@ span.flatpickr-weekday {
   padding-bottom: 10px;
   font-size: 24px;
   border-bottom: solid 5px #7acee0;
+}
+
+.archiveDescription-inquiry {
+  text-align: right;
 }
 
 .archiveItem__date span {
@@ -643,6 +689,13 @@ span.flatpickr-weekday {
 
 .eventSammary-title-jp {
   font-size: 24px;
+}
+
+.eventSammary-title-jp-ruby {
+  display: block;
+  margin-bottom: 0.5em;
+  font-size: 14px;
+  font-weight: normal;
 }
 
 .eventDetailsTable {
