@@ -20,6 +20,7 @@ License URI:  http://www.gnu.org/licenses/gpl.html
 
 body {
   position: relative;
+  padding-top: 43px;
 }
 
 a {
@@ -75,6 +76,67 @@ h3 {
 .home .l-header {
   position: absolute;
   background: rgba(255,255,255,0.9) !important;
+}
+
+.l-mjheader {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1002;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 100%;
+  height: 43px;
+  background-color: #FFF;
+  box-shadow: 0 0 2px rgba(4,0,0,.2)
+}
+
+.l-mjheader .mjlogo {
+  display: block;
+  padding: 5px
+}
+
+.l-mjheader .mjbutton {
+  z-index: 100;
+  padding: 0 5px
+}
+
+.l-mjheader .mjbutton-inner {
+  position: relative;
+  z-index: 101;
+  display: block;
+  width: 45px;
+  height: 43px;
+  text-align: center
+}
+
+.l-mjheader .mjbutton-icon {
+  position: absolute;
+  top: 0;
+  z-index: 102;
+  display: block;
+  margin: 0;
+  color: #d9708e;
+  font-size: 45px
+}
+
+.l-mjheader .mjbutton-label {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  z-index: 103;
+  display: block;
+  color: white;
+  font-size: 10px;
+  line-height: 1
+}
+
+.l-mjheader img {
+  width: 130px
 }
 
 .archive {
